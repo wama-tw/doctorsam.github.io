@@ -1,0 +1,135 @@
+{
+    "pageId": "home",
+
+    "hero": {
+    "lines": [
+        "致力於消滅骨骼肌肉腫瘤",
+        "臺北榮民總醫院骨骼肌肉腫瘤研究中心主任",
+        "吳博貴 醫師／醫學博士 PQ Wu, MD, PhD"
+    ]
+    },
+
+    "aboutDoctor": {
+    "title": "吳博貴 醫師／醫學博士",
+    "description": [
+        "始於 2012 年，有感病患與非骨腫瘤專長之醫師對骨骼肌肉腫瘤的專業了解較少，因此建置此網站，希望能拋磚引玉。"
+    ],
+    "experienceTitle": "經歷",
+    "experience": [
+        "國立陽明交通大學 教授",
+        "臺北榮民總醫院 關節重建科 主任",
+        "臺北榮民總醫院 骨骼肌肉腫瘤治療暨研究中心 主任",
+        "中華民國骨肉癌關懷協會 理事長",
+        "亞太惡性骨腫瘤學會(APMSTS) 理事"
+    ]
+    },
+
+    "centerIntro": {
+    "title": "臺北榮民總醫院－骨骼肌肉腫瘤研究中心",
+    "subtitle": "全球骨骼肌肉腫瘤治療與研究之重鎮",
+    "stats": [
+        { "label": "每年治療骨骼肌肉腫瘤", "value": "/ 例" },
+        { "label": "全台骨肉瘤於本中心治療比例", "value": "/ %" },
+        { "label": "SCI 醫學論文", "value": "/ 篇" }
+    ]
+    },
+
+    "diseaseGuide": {
+    "title": "病症說明查詢指南",
+    "description": [
+        "我們為致力於治療各種骨腫瘤、軟組織肉瘤、骨轉移之團隊！",
+        "骨骼肌肉腫瘤因相對少見，因此專精於此領域之醫師較缺乏。"
+    ],
+    "items": [
+        {
+        "label": "Bone Sarcoma Resection",
+        "title": "惡性骨腫瘤切除",
+        "categoryId": "bone-sarcoma"
+        },
+        {
+        "label": "Soft Tissue Sarcoma Resection",
+        "title": "惡性軟組織腫瘤切除",
+        "categoryId": "soft-tissue-sarcoma"
+        },
+        {
+        "label": "Bone Tumor Curettage",
+        "title": "良性骨瘤切除與刮除",
+        "categoryId": "bone-tumor-curettage"
+        },
+        {
+        "label": "Soft Tissue Sarcoma Excision",
+        "title": "良性軟組織腫瘤切除",
+        "categoryId": "soft-tissue-excision"
+        },
+        {
+        "label": "Bony Metastasis",
+        "title": "癌症合併骨轉移",
+        "categoryId": "bony-metastasis"
+        },
+        {
+        "label": "Cryotherapy",
+        "title": "腫瘤低溫冷凍治療",
+        "categoryId": "cryotherapy"
+        },
+        {
+        "label": "MIS Total Knee Replacement",
+        "title": "微創人工膝關節置換",
+        "categoryId": "mis-total-knee-replacement"
+        },
+        {
+        "label": "MIS Total Hip Replacement",
+        "title": "微創人工髖關節置換",
+        "categoryId": "mis-total-hip-replacement"
+        }
+    ],
+    "consultButton": {
+        "text": "前往醫療諮詢",
+        "url": "consult.html"
+    }
+    },
+
+    "sharing": {
+    "title": "願與民眾分享骨骼肌肉腫瘤醫學知識初衷",
+    "paragraphs": [
+        "2012 年 6 月 6 日，陪女兒切完四歲的蛋糕後，上樓打開了電腦，開始著手建構這個網頁。",
+        "有感於病友對於骨骼肌肉腫瘤了解較少，容易造成診斷延遲甚至不適當的治療，因此提供一些骨骼肌肉腫瘤醫學知識，與個人臨床上之淺薄經驗，與大家分享！",
+        "吳博貴醫師"
+    ]
+    },
+
+    "interactionPreview": {
+    "title": "醫病互動",
+    "subtitle": "透過網站資訊提供病友更多協助",
+    "cards": [
+        {
+        "title": "病友對吳博貴醫師的鼓勵",
+        "date": "2021-05-03",
+        "description": "謝謝這幾年來，許多病友的鼓勵，提供我前進的動力！",
+        "section": "interaction",
+        "articleId": "encouragement"
+        },
+        {
+        "title": "中華民國骨肉癌關懷協會之家影片",
+        "date": "2021-07-06",
+        "description": "記錄協會成立過程與病友互相扶持的故事。",
+        "section": "interaction",
+        "articleId": "video-home"
+        },
+        {
+        "title": "線上醫療諮詢 Q&A",
+        "date": "2022-01-10",
+        "description": "整理常見諮詢問題與回覆，協助病友釐清就醫前的疑問。",
+        "section": "consult",
+        "articleId": "consult-1"
+        },
+        {
+        "title": "退化性關節炎的保養",
+        "date": "2022-03-05",
+        "description": "從日常生活與運動習慣說明如何保養關節，減緩退化速度。",
+        "section": "disease",
+        "articleId": "bone-1"
+        }
+    ]
+    }
+
+}

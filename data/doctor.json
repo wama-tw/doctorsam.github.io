@@ -1,0 +1,34 @@
+{
+  "pageId": "doctor",
+  "title": "醫師介紹",
+  "breadcrumb": [
+    { "label": "首頁", "url": "index.html" },
+    { "label": "醫師介紹", "url": "doctor.html" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "title": "吳博貴 醫師",
+      "paragraphs": [
+        "這裡是醫師介紹的第一段文字。",
+        "這裡是醫師介紹的第二段文字。"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "學歷",
+      "items": [
+        "台北醫學大學 醫學系",
+        "……"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "經歷",
+      "items": [
+        "臺北榮民總醫院 XXX 科主治醫師",
+        "……"
+      ]
+    }
+  ]
+}

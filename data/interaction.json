@@ -1,0 +1,15 @@
+{
+  "pageId": "interaction",
+  "title": "醫病互動",
+  "breadcrumb": [
+    { "label": "首頁", "url": "index.html" },
+    { "label": "醫病互動", "url": "interaction.html" }
+  ],
+  "intro": {
+    "title": "專欄介紹",
+    "paragraphs": [
+      "醫病互動專欄，蒐集病友故事與醫師分享，提供就醫過程中的陪伴與參考。",
+      "歡迎有故事的病友來信分享。"
+    ]
+  }
+}

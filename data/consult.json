@@ -1,0 +1,15 @@
+{
+  "pageId": "consult",
+  "title": "醫療諮詢",
+  "breadcrumb": [
+    { "label": "首頁", "url": "index.html" },
+    { "label": "醫療諮詢", "url": "consult.html" }
+  ],
+  "intro": {
+    "title": "線上醫療諮詢說明",
+    "paragraphs": [
+      "若您對骨骼肌肉腫瘤或關節置換手術有相關疑問，可透過此處整理的常見問題與案例了解。",
+      "如需個案諮詢，請參考頁面中提供的聯絡方式或相關說明。"
+    ]
+  }
+}

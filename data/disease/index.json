@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "id": "bone-sarcoma",
+      "label": "惡性骨腫瘤切除",
+      "description": "介紹惡性骨腫瘤的常見症狀、診斷與治療方式。",
+      "articleIds": ["bone-1", "bone-2"]
+    },
+    {
+      "id": "soft-tissue-sarcoma",
+      "label": "惡性軟組織腫瘤切除",
+      "description": "關於惡性軟組織腫瘤的治療與術後照護。",
+      "articleIds": ["soft-1"]
+    }
+  ]
+}

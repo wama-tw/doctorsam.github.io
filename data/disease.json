@@ -1,0 +1,27 @@
+{
+  "pageId": "disease",
+  "title": "病症說明",
+  "breadcrumb": [
+    { "label": "首頁", "url": "index.html" },
+    { "label": "病症說明", "url": "disease.html" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "title": "骨肉瘤簡介",
+      "paragraphs": [
+        "這裡是骨肉瘤簡介的文字內容。",
+        "可以再加第二段說明。"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "常見症狀",
+      "items": [
+        "局部疼痛",
+        "腫脹",
+        "功能受限"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+    "title": "陳山姆醫師 醫學博士",
+    "logoText": "陳山姆醫師",
+    "nav": [
+    { "label": "醫師介紹", "url": "doctor.html" },
+    { "label": "病症說明", "url": "disease.html" },
+    { "label": "醫病互動", "url": "interaction.html" },
+    { "label": "醫療諮詢", "url": "consult.html" },
+    { "label": "常見問題", "url": "faq.html" },
+    { "label": "就醫指南", "url": "#" },
+    { "label": "學術新訊", "url": "#" },
+    { "label": "骨腫瘤醫師訓練", "url": "#" }
+    ],
+    "footer": {
+    "contactTitle": "聯絡資訊",
+    "contact": {
+        "email": "drwuvgh@gmail.com",
+        "phone": "0975-008-413",
+        "line": {
+        "label": "@drpqwu",
+        "url": "https://line.naver.jp/"
+        },
+        "note": "(無法及時回覆請見諒)"
+    },
+    "linksTitle": "相關連結",
+    "links": [
+        {
+        "label": "台北榮總骨骼肌肉腫瘤治療暨研究中心",
+        "url": "https://www.facebook.com"
+        },
+        {
+        "label": "中華民國骨肉癌關懷協會",
+        "url": "https://www.facebook.com"
+        },
+        {
+        "label": "臺北榮民總醫院關節重建科",
+        "url": "https://www.jrvghtpe.com.tw"
+        }
+    ],
+    "registerTitle": "網路掛號",
+    "registerItems": [
+        {
+        "label": "星期二上午",
+        "url": "https://www6.vghtpe.gov.tw"
+        },
+        {
+        "label": "星期四上午",
+        "url": "https://www6.vghtpe.gov.tw"
+        }
+    ],
+    "copyright":
+        "文章內容為台北榮總骨骼肌肉腫瘤研究中心，吳博貴醫師所創作。版權所有，歡迎說明出處後學術應用。如欲其他用途，請先來信告知！"
+    }
+}

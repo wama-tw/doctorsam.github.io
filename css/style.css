@@ -1,0 +1,801 @@
+/* =========================
+   全站基礎設定
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC",
+    "Microsoft JhengHei", system-ui, sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background: #ffffff;
+  font-size: 15px;
+}
+
+a {
+  color: #0054a6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =========================
+   Header / NavBar
+   ========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  transition: box-shadow 0.2s ease;
+}
+
+.site-header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  gap: 24px;
+}
+
+.site-logo a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #0054a6;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-logo a:hover {
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 6px 0;
+  position: relative;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #0054a6;
+  transition: width 0.2s ease;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+.lang-switch {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lang-switch a {
+  color: #666;
+  margin-left: 8px;
+}
+
+/* =========================
+   首頁：Hero 區
+   ========================= */
+
+.home-hero {
+  position: relative;
+  background: linear-gradient(135deg, #0c3a67, #0072b9);
+  color: #ffffff;
+  padding: 120px 0 110px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero h1 {
+  margin: 0 0 12px;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+}
+
+.home-hero p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+/* 可視需要增加淡淡圖形背景、圓形漸層之類的裝飾 */
+.home-hero::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), transparent);
+  right: -80px;
+  top: -80px;
+}
+
+/* =========================
+   首頁：醫師介紹
+   ========================= */
+
+.home-about {
+  padding: 60px 0 40px;
+}
+
+.home-about .container {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.home-about h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.home-about p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.home-about h3 {
+  margin: 16px 0 8px;
+  font-size: 18px;
+  color: #0054a6;
+}
+
+.home-about ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-about li {
+  position: relative;
+  padding-left: 14px;
+  margin: 4px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.home-about li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0054a6;
+}
+
+/* =========================
+   首頁：研究中心介紹
+   ========================= */
+
+.home-center {
+  background: #f5f7fa;
+  padding: 56px 0 52px;
+  text-align: center;
+}
+
+.home-center h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.home-center p {
+  margin: 4px 0 24px;
+  color: #666;
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.home-stat-box {
+  background: #ffffff;
+  border: 1px solid #dde3ec;
+  padding: 18px 12px;
+}
+
+.home-stat-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0054a6;
+  margin-bottom: 4px;
+}
+
+.home-stat-label {
+  font-size: 13px;
+  color: #777;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #0054a6;
+  color: #0054a6;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  background: #0054a6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =========================
+   首頁：病症說明查詢指南
+   ========================= */
+
+.home-disease-guide {
+  padding: 56px 0 52px;
+}
+
+.home-disease-guide h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.home-disease-guide p {
+  margin: 4px 0 14px;
+  color: #555;
+}
+
+.disease-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.disease-card {
+  display: block;
+  padding: 14px 14px 16px;
+  border-radius: 4px;
+  border: 1px solid #e1e4ec;
+  background: #ffffff;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.disease-card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: #c8d4f0;
+}
+
+.disease-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.disease-title {
+  font-size: 14px;
+  color: #333;
+}
+
+/* =========================
+   首頁：分享文字
+   ========================= */
+
+.home-sharing {
+  background: #f8fafc;
+  padding: 56px 0 52px;
+}
+
+.home-sharing .container {
+  max-width: 800px;
+}
+
+.home-sharing h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.home-sharing p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+/* =========================
+   首頁：醫病互動預覽
+   ========================= */
+
+.home-interaction {
+  padding: 56px 0 64px;
+}
+
+.home-interaction h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.home-interaction > .container > p {
+  margin: 0 0 18px;
+  color: #666;
+}
+
+.interaction-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.interaction-card {
+  display: block;
+  padding: 16px 16px 18px;
+  border-radius: 4px;
+  border: 1px solid #e1e4ec;
+  background: #ffffff;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.interaction-card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: #c8d4f0;
+}
+
+.interaction-card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #222;
+}
+
+.interaction-date {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.interaction-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* =========================
+   常見問題 FAQ
+   ========================= */
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.faq-sidebar h2 {
+  margin: 24px 0 12px;
+  font-size: 18px;
+}
+
+.faq-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-sidebar li + li {
+  margin-top: 4px;
+}
+
+.faq-sidebar a {
+  display: block;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: #444;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.faq-sidebar a:hover {
+  background: #f0f4fb;
+}
+
+.faq-sidebar a.active {
+  background: #0054a6;
+  color: #ffffff;
+}
+
+.faq-main .page-header {
+  padding-top: 24px;
+}
+
+.faq-list {
+  margin-top: 16px;
+}
+
+.faq-item + .faq-item {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.faq-question {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #222;
+}
+
+.faq-answer p {
+  margin: 0 0 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .faq-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .faq-sidebar h2 {
+    margin-top: 16px;
+  }
+}
+
+
+/* =========================
+   內頁：共用（醫師介紹 / 病症說明 / 醫病互動列表 / 文章）
+   ========================= */
+
+main.container {
+  padding-bottom: 48px;
+}
+
+.page-header {
+  padding: 32px 0 10px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #777;
+}
+
+.breadcrumb a {
+  color: #777;
+}
+
+.content-section {
+  margin: 20px 0 12px;
+}
+
+.content-section h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #0054a6;
+}
+
+.content-section p {
+  margin: 0 0 8px;
+  color: #555;
+}
+
+.content-section ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.content-section li {
+  margin: 2px 0;
+}
+
+/* 醫病互動列表 */
+
+.article-list {
+  padding: 8px 0 20px;
+}
+
+.article-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.article-item h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.article-item h2 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.article-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.article-date {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 8px;
+}
+
+.article-excerpt {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #555;
+}
+
+.article-tag {
+  font-size: 12px;
+  color: #0054a6;
+}
+
+/* 單篇文章頁 */
+
+.article-content {
+  padding: 8px 0 24px;
+}
+
+.article-content p {
+  margin: 0 0 10px;
+}
+
+.article-youtube {
+  margin-bottom: 40px;
+}
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 24px 16px;
+}
+
+.footer-grid h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.footer-grid p {
+  margin: 0;
+}
+
+.footer-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-grid li + li {
+  margin-top: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 16px 14px;
+  text-align: center;
+  color: #777;
+}
+
+/* =========================
+   RWD
+   ========================= */
+
+@media (max-width: 992px) {
+  .home-about .container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .disease-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .interaction-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .home-hero {
+    padding: 80px 0 70px;
+  }
+
+  .home-hero h1 {
+    font-size: 22px;
+    letter-spacing: 0.12em;
+  }
+
+  .home-hero p {
+    font-size: 14px;
+  }
+
+  .home-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .disease-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-about,
+  .home-center,
+  .home-disease-guide,
+  .home-sharing,
+  .home-interaction {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header {
+    padding-top: 20px;
+  }
+}
+
+.disease-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.disease-sidebar h2 {
+  margin: 24px 0 12px;
+  font-size: 18px;
+}
+
+.disease-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.disease-sidebar li + li {
+  margin-top: 4px;
+}
+
+.disease-sidebar a {
+  display: block;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: #444;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.disease-sidebar a:hover {
+  background: #f0f4fb;
+}
+
+.disease-sidebar a.active {
+  background: #0054a6;
+  color: #ffffff;
+}
+
+.disease-main {
+  padding-top: 0;
+}
+
+.disease-category-desc {
+  margin: 12px 0 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .disease-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .disease-sidebar h2 {
+    margin-top: 16px;
+  }
+}
+
